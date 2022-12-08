@@ -5,3 +5,7 @@ The way this works is that it receives a post request from the minecraft element
 
 # Minecraft side:
 [Thanks DiffuseHyperion!](https://github.com/DiffuseHyperion/DiscordMinecraftBridge)
+
+
+# note:
+Project is still not done yet! And yes I am working on Jasbot while this is all happening!
