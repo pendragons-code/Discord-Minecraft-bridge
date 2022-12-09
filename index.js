@@ -1,0 +1,13 @@
+const { bot } = require("./Loaders/bot.js")
+const env = require("dotenv").config()
+if(!process.env.port) return console.log("Missing value for `port` in .env!")
+if(!process.env.token) return console.log("Missing value for `token` in .env!")
+const { helper } = require("./Loaders/helpers.js")
+const { commander } = require("./Loaders/Commands.js")
+const { eventer } = require("./Loaders/events")
+commander()
+helper()
+eventer()
+console.log(`Currently hanging out on ${process.pid}!`)
+bot.login(process.env.token)
+process.traceDeprecation = true
