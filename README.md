@@ -9,3 +9,31 @@ The way this works is that it receives a post request from the minecraft element
 
 # note:
 Project is still not done yet! And yes I am working on Jasbot while this is all happening!
+
+# configuration
+```
+.env
+
+token = TokenHere
+port = portHere
+```
+
+```
+config.json
+
+{	
+  "minecraftEndPoint": "",
+	"prefix": "",
+	"botID": "",
+	"OwnerID": "",
+	"guildID": "",
+	"decorpiece": "-=-=-=-=-=-=",
+	"decorpiece2": "=-=-=-=-=-=-"
+}
+```
+
+
+```
+npm i
+npm run deploy
+```
