@@ -37,3 +37,5 @@ config.json
 npm i
 npm run deploy
 ```
+# Status:
+works, but not sure if the minecraft client can receive it (I tried and it should work in theory)
