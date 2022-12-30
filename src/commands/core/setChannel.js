@@ -28,7 +28,7 @@ module.exports = {
 		}
 		await db.delete(`channel_${messageCreate.guild.id}`)
 			.catch((error) => {
-				console.error("Error", error)
+				console.error(error)
 				return messageCreate.channel.send("Something went wrong!")
 			})
 			return messageCreate.channel.send("Done!")
