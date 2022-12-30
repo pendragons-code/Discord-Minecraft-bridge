@@ -12,7 +12,7 @@ app.post("/", async function (req, res) {
 		console.log(`The db for ${guildID} is null!`)
 		bot.users.cache.get(OwnerID).send(`Need to set the channel for ${guildID}`)
 			.catch((error) => {
-				console.error(`${guildID} is empty!`, error)
+				console.error(error)
 			})
 		return res.send(`{ "Error": "Default channel has not been set in the database!" }`)
 	}
