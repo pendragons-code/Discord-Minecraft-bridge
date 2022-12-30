@@ -20,7 +20,7 @@ app.post("/", async function (req, res) {
 	if (!getChannel) {
 		bot.users.cache.get(OwnerID).send(`Channel set in the database does not exist!`)
 			.catch((error) => {
-				console.error(`${guildID}'s default channel does not exist!`, error)
+				console.error(error)
 			})
 		return res.send(`{ "Error": "Default set in the database channel does not exist!" }`)
 	}
@@ -31,7 +31,7 @@ app.post("/", async function (req, res) {
 	getChannel.send(`${usernameMinecraftRequest} sent: \`${messageMinecraftRequest}\``)
 		.catch((error) => {
 			res.send(`{ "Error": ${error} }`)
-			console.error("Error!", error)
+			console.error(error)
 			bot.users.cache.get(OwnerID).send(`Error!: \`${error}\``)
 			return getChannel.send("an error occurred!")
 		})
