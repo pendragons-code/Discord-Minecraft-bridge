@@ -23,7 +23,7 @@ module.exports = {
 		let contentJson = JSON.stringify({ username: messageToMinecraft })
 		await axios.post(minecraftEndPoint, contentJson)
 			.catch((error) => {
-				console.error("Error!", err)
+				console.error(error)
 				return messageCreate.reply("Something went wrong!")
 			})
 			.then(() => {
